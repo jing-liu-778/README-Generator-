@@ -1,5 +1,5 @@
 # README Generator
-    ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
+  ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
     
     ## Description 
     A high-quality README file explains what your application does and why you used the technologies that you did.At a bare minimum, a README needs a title and a short description explaining the what, why, and how of the project. <br />This is a command-line application that runs with Node.js that dynamically generates a README.md file based on input about your project. 
