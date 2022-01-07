@@ -1,7 +1,7 @@
 // require external module
 const fs = require('fs'); 
 const inquirer = require('inquirer');
-const util = require('util')
+// const util = require('util')
 // require internal module
 const generateMarkdown = require('./util/generateMarkdown.js');
 
