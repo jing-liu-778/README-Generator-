@@ -1,9 +1,9 @@
 // require external module
-const fs = require('fs');
+const fs = require('fs'); 
 const inquirer = require('inquirer');
 const util = require('util')
 // require internal module
-const generateMarkdown = require('./util/generateMarkdown');
+const generateMarkdown = require('./util/generateMarkdown.js');
 
 
 // user question for readme file input
@@ -11,7 +11,7 @@ const generateMarkdown = require('./util/generateMarkdown');
 
 const questions = () => {
     return inquirer.prompt([
-      {
+        {
         type: 'input',
         name: 'title',
         message: "What's the project title?",
@@ -21,10 +21,10 @@ const questions = () => {
             }else{
                 consloe.log("Please enter your title");
                 return false;
-                }
+            }
         }
-      },
-      {
+        },
+        {
         type: 'input',
         name: 'description',
         message: "What's the description of your project?",
@@ -35,8 +35,8 @@ const questions = () => {
                 return false;
                 }
         }
-      },
-      {
+        },
+        {
         type: 'input',
         name: 'github',
         message: 'What is your Github name?',
@@ -47,8 +47,8 @@ const questions = () => {
                 return false;
                 }
         }
-      },
-      {
+        },
+        {
         type: 'input',
         name: 'email',
         message: 'What is your email address?',
@@ -59,8 +59,8 @@ const questions = () => {
                 return false;
                 }
         }
-      },
-      {
+        },
+        {
         type: 'list',
         name: 'license',
         message: 'Please choose a license for this project: ',
@@ -80,8 +80,8 @@ const questions = () => {
                 return false;
                 }
         }
-      },
-      {
+        },
+        {
         type: 'input',
         name: 'install',
         message: 'What are the steps required to install your project?',
@@ -92,8 +92,8 @@ const questions = () => {
                 return false;
                 }
         }
-      },
-      {
+        },
+        {
         type: 'input',
         name: 'usage',
         message: 'How do you use this app?',
@@ -104,8 +104,8 @@ const questions = () => {
                 return false;
                 }
         }
-      },
-      {
+        },
+        {
         type: 'input',
         name: 'test',
         message: 'How users test your application?',
@@ -116,8 +116,8 @@ const questions = () => {
                 return false;
                 }
         }
-      },
-      {
+        },
+        {
         type: 'input',
         name: 'contributor',
         message: 'What does user need to know about contributing to the repo?',
@@ -128,34 +128,34 @@ const questions = () => {
                 return false;
                 }
         }
-      },
+        },
     ]);
-  };
+};
 
   // write README file 
-  const writeFile = data => {
-      fs.writeFile('README.md', data, err => {
-          if(err){
-              console.log(err);
-              return;
-          }else{
-              console.log("README file has been succesfully created!")
-          }
-      })
-  }
+const writeFile = data => {
+fs.writeFile('README.md', data, err => {
+    if(err){
+        console.log(err);
+        return;
+    }else{
+        console.log("README file has been succesfully created!")
+    }
+})
+}
   
   // initialize the program
 
-    questions()
-    .then(answers => {
-      return generateMarkdown(answers);
-        })
-    .then(data => {
-      return writeFile(data);
-        })
-    .catch(err => {
-      console.log(err)
-        })
+questions()
+.then(answers => {
+    return generateMarkdown(answers);
+    })
+.then(data => {
+    return writeFile(data);
+    })
+.catch(err => {
+    console.log(err)
+    })
 
 //   const init =() => {
 //     questions()
