@@ -134,7 +134,7 @@ const questions = () => {
 
   // write README file 
 const writeFile = data => {
-fs.writeFile('README.md', data, err => {
+fs.writeFile('README-example.md', data, err => {
     if(err){
         console.log(err);
         return;

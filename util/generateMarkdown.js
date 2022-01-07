@@ -15,7 +15,7 @@ const generateMarkdown = data => {
   * [Questions](#questions)
   
   ## Installation 
-  ${data.insta}
+  ${data.install}
   
   ## Usage 
   ${data.usage}

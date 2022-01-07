@@ -14,10 +14,10 @@
   * [Questions](#questions)
   
   ## Installation 
-  undefined
+  The user should clone the repository from GitHub and download Node.Run npm install in order to install the following npm package dependencies such as inquirer in the package.json.<br />The application will start by running node index.js in the command line. <br />Answer the prompts in your command line to generate the README.
   
   ## Usage 
-  Use inquirer from your command line to answer questions about your project.<br /><img src="utils/README-GENERATOR.gif"><br>Or view link here - [Screencastify](https://drive.google.com/file/d/1gSXGCnc5YyJ2DHBDaH1ZeH5sYY2-ZACZ/view?usp=sharing)
+  Use inquirer from your command line to answer questions about your project.
   
   ## License 
   This project is license under MIT
