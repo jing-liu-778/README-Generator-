@@ -24,7 +24,7 @@ const generateMarkdown = data => {
   This project is license under ${data.license}
   
   ## Contributing 
-  ${data.contributors}
+  ${data.contributor}
   
   ## Tests
   ${data.test}
