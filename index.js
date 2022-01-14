@@ -19,7 +19,7 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please enter your title");
+                console.log("Please enter your title");
                 return false;
             }
         }
@@ -31,7 +31,7 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please enter your description");
+                console.log("Please enter your description");
                 return false;
                 }
         }
@@ -43,7 +43,7 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please enter your github name");
+                console.log("Please enter your github name");
                 return false;
                 }
         }
@@ -55,7 +55,7 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please enter your email");
+                console.log("Please enter your email");
                 return false;
                 }
         }
@@ -76,7 +76,7 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please choose a license");
+                console.log("Please choose a license");
                 return false;
                 }
         }
@@ -88,9 +88,10 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please enter install steps");
+                console.log("Please enter install steps");
                 return false;
                 }
+                
         }
         },
         {
@@ -100,7 +101,7 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please enter usage");
+                console.log("Please enter usage");
                 return false;
                 }
         }
@@ -112,7 +113,7 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please enter test");
+                console.log("Please enter test");
                 return false;
                 }
         }
@@ -124,7 +125,7 @@ const questions = () => {
         validate: (value)=>{
             if(value){return true;
             }else{
-                consloe.log("Please enter install steps");
+                console.log("Please enter install steps");
                 return false;
                 }
         }
